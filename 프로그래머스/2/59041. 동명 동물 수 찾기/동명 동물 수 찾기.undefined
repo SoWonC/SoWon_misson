@@ -1,6 +1,5 @@
-SELECT name, COUNT(*) AS cnt
-FROM ANIMAL_INS
-WHERE name IS NOT NULL
-GROUP BY name
-HAVING COUNT(*) >= 2
-ORDER BY name ASC;
+select name,count(*) from ANIMAL_INS
+where name is not null
+group by name
+having count(*) >=2
+order by name; 
